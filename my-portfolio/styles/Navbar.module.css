@@ -1,0 +1,28 @@
+.navLink {
+  position: relative;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  transition: color 0.3s ease-in-out;
+  padding-bottom: 4px;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #e63946; /* Change this color as needed */
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navLink:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navLink:hover {
+  color: #e63946; /* Change text color on hover */
+}

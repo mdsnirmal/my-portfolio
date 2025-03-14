@@ -12,40 +12,34 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setSuccess(null);
-
+  
     try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbwx-sz19ULuYCbeYmfIdxm5ZQGTcd5WBde4NOKquZdbRCVaDIbPNWhvXJRm0ZgGIHg/exec",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Failed to send message.");
-      }
-
-      const result = await response.json();
-
-      if (result.status === "Success") {
-        setSuccess({ type: "success", message: "Message sent successfully!" });
-        setFormData({ name: "", email: "", message: "" });
-      } else {
-        setSuccess({ type: "error", message: "Failed to send message. Try again." });
-      }
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwW9mvrqcHfNEHfXiH5Li4-DIT9MT6M5m0brGwDZQ0LXQcsfHopTjbwEHFy8FN8Nm50tQ/exec", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        mode: "no-cors", // TEMPORARY TEST
+        body: JSON.stringify(formData),
+      });
+  
+      console.log("Response received:", response);
+  
+      setSuccess({ type: "success", message: "Message sent successfully!" });
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      setSuccess({ type: "error", message: "Error sending message. Try again later." });
+      console.error("Fetch error:", error);
+      setSuccess({ type: "error", message: "Error sending message." });
     }
-
+  
     setLoading(false);
   };
+  
+  
 
   return (
     <section id="contact" className="py-16 px-6 md:px-8 bg-gray-900 text-white">

@@ -13,7 +13,7 @@ const Footer = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          © {new Date().getFullYear()} Your Name. All rights reserved.
+          © {new Date().getFullYear()} Sachintha Nirmal. All rights reserved.
         </motion.p>
 
         {/* Right - Social Icons */}

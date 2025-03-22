@@ -44,7 +44,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
           >
-            Hi! I'm <span className="font-semibold">Sachintha Nirmal</span>, a passionate{" "}
+            Hi! I&apos;m <span className="font-semibold">Sachintha Nirmal</span>, a passionate{" "}
             <span className="text-blue-500 font-semibold">Data Scientist & Cloud Engineer</span> with expertise in 
             AI, Machine Learning, and Cloud Computing. I love solving complex problems and building 
             intelligent solutions that make an impact.

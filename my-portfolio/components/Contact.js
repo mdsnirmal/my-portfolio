@@ -55,7 +55,7 @@ const Contact = () => {
         </motion.h2>
 
         <p className="mt-4 text-lg text-gray-300">
-          I'm always open to new opportunities and collaborations. Feel free to drop a message!
+          I&apos;m always open to new opportunities and collaborations. Feel free to drop a message!
         </p>
 
         {/* Contact Form */}

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
-// import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";

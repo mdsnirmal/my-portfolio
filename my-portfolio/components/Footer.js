@@ -23,16 +23,16 @@ const Footer = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
+          <a href="https://github.com/mdsnirmal" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
             <Github size={24} />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
+          <a href="https://linkedin.com/in/sachintha-nirmal" target="_blank" rel="noopener noreferrer" className="hover:text-white transition duration-300">
             <Linkedin size={24} />
           </a>
-          <a href="mailto:your.email@example.com" className="hover:text-white transition duration-300">
+          <a href="mailto:mdsnirmal@gmail.com" className="hover:text-white transition duration-300">
             <Mail size={24} />
           </a>
-          <a href="tel:+1234567890" className="hover:text-white transition duration-300">
+          <a href="tel:+94767278015" className="hover:text-white transition duration-300">
             <Phone size={24} />
           </a>
         </motion.div>
